@@ -54,6 +54,7 @@ input[type="checkbox"] {
 input[type="submit"] {
     color: #eee;
     background-color: #305496;
+    cursor: pointer;
     height: 8vh;
     width: 15%;
     font-weight: bolder;
