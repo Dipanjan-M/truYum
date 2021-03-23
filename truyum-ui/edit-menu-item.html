@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/icon-truyum.jpg" type="image/jpg">
+	<title>truYum | Edit Menu</title>
+	<link rel="stylesheet" href="style/admin-style.css">
+	<link rel="stylesheet" href="style/form-field.css">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li>
+				<h1 class="app-title">truYum</h1>
+			</li>
+			<li>
+				<span class="logo-image">
+					<img src="images/fork-cross.png" alt="fork-crossed" height="50" width="auto">
+				</span>
+			</li>
+			<li><a href="menu-item-list-admin.html">Menu</a></li>
+		</ul>
+	</nav>
+	<section>
+		<h1>Edit Menu Item</h1>
+		<form action="#" method="post">
+			<label for="name">Name</label><br>
+			<input type="text" name="title" value="Sandwich" minlength="2" maxlength="65" required=""><br>
+			<div class="row">
+				<div class="col">
+					<label for="price">Price</label><br>
+					<input type="number" name="price" value="97" required="">
+				</div>
+				<div class="col">
+					<label for="active">Active</label><br>
+					<input type="radio" name="inStock" value="Yes" checked="" required=""> Yes
+					<input type="radio" name="inStock" value="No" required=""> No <br>
+				</div>
+				<div class="col">
+					<label for="date">Date of Launch</label><br>
+					<input type="text" name="dateOfLaunch" value="27/04/2022">
+				</div>
+				<div class="col">
+					<label for="category">Category</label><br>
+					<select name="category" required="">
+						<option value="Starters">Starters</option>
+						<option value="Main Course" selected="">Main Course</option>
+						<option value="Dessert">Dessert</option>
+						<option value="Drinks">Drinks</option>	
+					</select>
+				</div>
+			</div>
+			<br>
+			<input type="checkbox" name="freeDelivery" checked=""> Free Delivery <br><br>
+			<input type="submit" name="submit" value="Save">
+		</form>
+	</section>
+
+	<footer>
+		Copyright &copy; 2019
+	</footer>
+</body>
+</html>
